@@ -1,40 +1,45 @@
-# TweetScheduler 🐦📅 (In Progress)
+# TweetScheduler 🐦📅
 
-Welcome to TweetScheduler, a personal project under development in order to enhance my understanding of the Rails framework and web application developement as a whole.
+Welcome to TweetScheduler, a personal project developed to enhance my skills in Ruby on Rails and web application development.
 
-### Features implemented and concepts learnt so far: 📝
-- Controllers and Actions
-  - MainController: Manages the main view, demonstrating the use of flash messages to provide feedback to users.
-  - RegistrationController: Handles user registration, including creating a new user and handling form submissions with validation errors.
-- Form Handling
-  - Form Builder: Utilized `form_with` to create forms for user registration, demonstrating dynamic form generation with Rails. This includes setting up form fields for email, password, and password confirmation.
-  - Flash Messages: Implemented flash messages to provide immediate feedback to users. These messages can be used to display notices or alerts based on user actions.
-  - Error Handling and Validation: Added server-side validation to handle errors during user registration. This ensures that users are informed of issues with their input and can correct them accordingly.
+### Features Implemented and Concepts Learned So Far: 📝
 
-### Getting Started 🚀
+- **Rails Setup**
+  - **Controller and Actions**: Configured `MainController` for displaying flash messages and `RegistrationController` for user registration.
+  - **Views and Forms**: Created registration forms using `form_with`, including error handling and user feedback.
 
-These instructions are applicable for running the project on Ubuntu or any Unix-like system. Ensure that Ruby, Rails, and other dependencies are properly installed before following the setup instructions.
+- **Turbo and Hotwire**
+  - **Turbo Streams**: Implemented Turbo Streams to handle dynamic updates and partial page replacements in response to form submissions.
+  - **Error Handling with Turbo**: Configured status codes for form validations to ensure proper handling of invalid form submissions.
 
-1. Clone the Repository:
+- **Form Validation and Error Handling**
+  - **Client-Side Validation**: Designed forms with real-time validation feedback to guide users.
+  - **Server-Side Validation**: Ensured robust data validation on the server side to handle user input correctly and provide meaningful error messages.
+
+### Getting Started 💻
+
+Follow these steps to run the project locally on a Unix-based environment (Ubuntu) or any compatible system.
+
+1. **Clone the Repository:**
    ```bash
    git clone https://github.com/TaimoorAleem/TweetScheduler
    ```
-2. Navigate to the Project Directory:
+2. **Navigate to the Project Directory:**
    ```bash
    cd path/to/project
    ```
-3. Install Dependencies:
+3. **Install Dependencies:**
    ```bash
    bundle install
    ```
-4. Set Up the Database:
+4. **Set Up the Database:**
    ```bash
    rails db:create
    rails db:migrate
    ```
-5. Start the Rails Server:
+5. **Start the Rails Server:**
    ```bash
    rails server
    ```
-6. Access the Application:
+6. **Access the Application:**
    Open your browser and navigate to http://localhost:3000 to view the application.
