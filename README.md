@@ -1,4 +1,4 @@
-# TweetScheduler 🐦📅
+# TweetScheduler 🐦📅 (In-Progress)
 
 Welcome to TweetScheduler, a personal project developed to enhance my skills in Ruby on Rails and web application development.
 
