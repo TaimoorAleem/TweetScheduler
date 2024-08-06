@@ -6,4 +6,7 @@ Rails.application.routes.draw do
 
   # GET /register
   get "register", to: "registration#new"
+
+  # POST /register
+  post "register", to: "registration#create"
 end
