@@ -6,10 +6,14 @@ Rails.application.routes.draw do
 
   # GET /register
   get "register", to: "registration#new"
-
   # POST /register
   post "register", to: "registration#create"
 
-  # DELETE /logout
-  delete "logout", to: "session#destroy"
+  # GET /signin
+  get "signin", to: "session#new"
+  # POST /signin
+  post "signin", to: "session#create"
+
+  # DELETE /signout
+  delete "signout", to: "session#destroy"
 end

@@ -9,7 +9,6 @@
 
     <%= yield :head %>
 
-    
     <link rel="icon" href="/icon.png" type="image/png">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
@@ -24,7 +23,7 @@
   <body>
     <%= render partial: "shared/navbar" %>
 
-    <div class="container">
+    <div class="container mt-4">
       <%= render partial: "shared/flash" %>
       <%= yield %>
     </div>
