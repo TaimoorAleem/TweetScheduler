@@ -9,4 +9,7 @@ Rails.application.routes.draw do
 
   # POST /register
   post "register", to: "registration#create"
+
+  # DELETE /logout
+  delete "logout", to: "session#destroy"
 end

@@ -1,8 +1,9 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <div class="nav-item">
+    <div class="d-flex align-items-center">
       <% if @user %>
-        Logged in as: <%= @user.email %>
+        <div class="me-3">Logged in as: <%= @user.email %></div>
+        <%= button_to "Log Out", logout_path, method: :delete, class: "btn btn-outline-danger py-1" %>
       <% end %>
     </div>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
