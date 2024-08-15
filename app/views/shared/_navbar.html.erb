@@ -1,9 +1,10 @@
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
     <div class="d-flex align-items-center">
-      <% if @user %>
-        <div class="me-3">Signed in as: <%= @user.email %></div>
-        <%= button_to "Sign Out", signout_path, method: :delete, class: "btn btn-outline-danger py-1" %>
+      <% if Current.user %>
+        <div class="me-3">Signed in as: <%= Current.user.email %></div>
+        <%= link_to "Edit Password", edit_password_path, class: "btn btn-outline-primary py-1 mx-2" %>
+        <%= button_to "Sign Out", signout_path, method: :delete, class: "btn btn-outline-danger py-1 mx-2" %>
       <% else %>
         <%= link_to "Sign In", signin_path, class: "btn btn-outline-primary me-2" %>
         <%= link_to "Register", register_path, class: "btn btn-outline-secondary" %>

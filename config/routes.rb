@@ -4,6 +4,11 @@ Rails.application.routes.draw do
   # GET /about
   get "about", to: "about#index"
 
+  # GET /password
+  get "password", to:  "password#edit", as: :edit_password
+  # GET /password
+  patch "password", to: "password#update"
+
   # GET /register
   get "register", to: "registration#new"
   # POST /register
